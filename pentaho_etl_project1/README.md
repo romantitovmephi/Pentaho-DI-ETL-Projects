@@ -1,5 +1,3 @@
-## Использовалась версия Pentaho DI Version 9.4. Корректно работает с версией Java 8 Update 121
-
 `staging_orders.ktr` - трансформация по загрузке данных из файла Excel в базу данных
 
 ![staging](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/staging.png)
