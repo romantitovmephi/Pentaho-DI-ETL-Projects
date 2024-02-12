@@ -16,3 +16,7 @@
 ![tft]()
 
 `final_job.kjb` - выполняет всю последовательность трансформаций
+![final]()
+
+
+P.S. перед запуском final_job и не только проверить: Edit - Set Environment Variables: HOME и WORKFOLDER - пути до них, соответственно пути к папкам temp и pentaho_etl_jobs
