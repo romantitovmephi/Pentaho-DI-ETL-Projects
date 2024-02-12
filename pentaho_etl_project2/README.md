@@ -3,6 +3,7 @@
 ![download](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/dwnld.png)
 
 `merge_transformation.ktr` - объединяет данные из трех таблиц в одну, сохраняет в `file-general.csv`
+
 ![merge](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/mrg.png)
 
 `transformation_for_task.ktr` - разбивает данные на разные форматы:
@@ -17,6 +18,7 @@
 ![tft](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/tft.png)
 
 `final_job.kjb` - выполняет всю последовательность трансформаций
+
 ![final](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/final.png)
 
 
