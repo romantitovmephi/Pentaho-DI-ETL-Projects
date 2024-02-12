@@ -319,12 +319,12 @@
       <fields>
         <field>
           <variable_name>WORK</variable_name>
-          <variable_value>/Users/Roman/temp</variable_value>
+          <variable_value>/Users/Roman/Desktop/pentaho_etl_jobs/temp</variable_value>
           <variable_type>JVM</variable_type>
         </field>
         <field>
           <variable_name>WORKFOLDER</variable_name>
-          <variable_value>/Users/Roman/Desktop/introduction_pentaho</variable_value>
+          <variable_value>/Users/Roman/Desktop/pentaho_etl_jobs</variable_value>
           <variable_type>JVM</variable_type>
         </field>
       </fields>
@@ -336,13 +336,13 @@
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>Download superstore</name>
+      <name>Download file</name>
       <description/>
       <type>JOB</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <job_object_id/>
-      <filename>${WORKFOLDER}/Job_download_samplestore.kjb</filename>
+      <filename>${WORKFOLDER}/job_download_file.kjb</filename>
       <jobname/>
       <directory/>
       <arg_from_previous>N</arg_from_previous>
@@ -380,7 +380,7 @@
       <filename/>
       <fields>
         <field>
-          <name>${HOME}/sample-superstore.xls</name>
+          <name>${HOME}/sample-file.xls</name>
         </field>
       </fields>
       <parallel>N</parallel>
@@ -410,7 +410,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${WORKFOLDER}/Transformation_general.ktr</filename>
+      <filename>${WORKFOLDER}/merge_transformation.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -457,7 +457,7 @@
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>Transformation for final task</name>
+      <name>Transformation for task</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
@@ -508,7 +508,7 @@
     </hop>
     <hop>
       <from>Set variables</from>
-      <to>Download superstore</to>
+      <to>Download file</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -516,7 +516,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Download superstore</from>
+      <from>Download file</from>
       <to>Checks if files exist</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -553,7 +553,7 @@
     </hop>
     <hop>
       <from>Create a folder returns</from>
-      <to>Transformation for final task</to>
+      <to>Transformation for task</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

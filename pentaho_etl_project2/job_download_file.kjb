@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>Job_download_samplestore</name>
+  <name>Job_download_file</name>
   <description/>
   <extended_description/>
   <job_version/>
+  <job_status>0</job_status>
   <directory>/</directory>
   <created_user>-</created_user>
   <created_date>2023/11/21 13:49:10.868</created_date>
@@ -314,7 +315,7 @@
       <type>HTTP</type>
       <attributes/>
       <url>https://github.com/Data-Learn/data-engineering/raw/master/DE-101%20Modules/Module01/DE%20-%20101%20Lab%201.1/Sample%20-%20Superstore.xls</url>
-      <targetfilename>${HOME}/sample-superstore.xls</targetfilename>
+      <targetfilename>${HOME}/sample-file.xls</targetfilename>
       <file_appended>N</file_appended>
       <date_time_added>N</date_time_added>
       <targetfilename_extension/>
@@ -343,7 +344,7 @@
       <description/>
       <type>SHELL</type>
       <attributes/>
-      <filename>${WORKFOLDER}/import.sh</filename>
+      <filename>/Users/Roman/Desktop/pentaho_etl_jobs/import.sh</filename>
       <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
