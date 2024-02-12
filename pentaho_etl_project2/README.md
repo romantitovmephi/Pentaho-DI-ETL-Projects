@@ -1,4 +1,5 @@
 `job_download_file.kjb` - скачивает файл через HTTP или Shell (указать путь до `import.sh`)
+
 ![download](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/dwnld.png)
 
 `merge_transformation.ktr` - объединяет данные из трех таблиц в одну, сохраняет в `file-general.csv`
