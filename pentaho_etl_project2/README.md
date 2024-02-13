@@ -1,3 +1,6 @@
+`temp` - содержит все файлы трансформаций
+
+
 `job_download_file.kjb` - скачивает файл через HTTP или Shell (указать путь до `import.sh`)
 
 ![download](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/dwnld.png)
@@ -22,4 +25,4 @@
 ![final](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/final.png)
 
 
-P.S. перед запуском final_job и не только проверить: Edit - Set Environment Variables: HOME и WORKFOLDER - пути до них, соответственно пути к папкам temp и pentaho_etl_jobs2
+P.S. перед запуском final_job и не только проверить: Edit - Set Environment Variables: HOME и WORKFOLDER - пути до них, соответственно пути к папкам temp и pentaho_etl_project2
