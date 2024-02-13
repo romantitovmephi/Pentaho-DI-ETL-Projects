@@ -1,15 +1,15 @@
 `staging_orders.ktr` - трансформация по загрузке данных из файла Excel в базу данных
 
-![staging](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/staging.png)
+![staging](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/staging.png)
 
-![stg](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/stg.png)
+![stg](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/stg.png)
 
 `dim_tables.ktr` - трансформация данных внутри базы данных
 
-![dimension](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/dimension.png)
+![dimension](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dimension.png)
 
-![dw](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/dw.png)
+![dw](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dw.png)
 
 `job.kjb` - job, выполняющий всю последовательность трансформаций (оркестрирует data pipeline)
 
-![job](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/scr/job.png)
+![job](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/job.png)
