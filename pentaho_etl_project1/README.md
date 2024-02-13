@@ -10,6 +10,6 @@
 
 ![dw](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dw.png)
 
-`job.kjb` - job, выполняющий всю последовательность трансформаций (оркестрирует data pipeline)
+`Pentaho_Postgres_Job.kjb` - job, выполняющий всю последовательность трансформаций (оркестрирует data pipeline)
 
 ![job](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/job.png)
