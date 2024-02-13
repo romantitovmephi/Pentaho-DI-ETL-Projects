@@ -4,7 +4,7 @@
 
 ![stg](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/stg.png)
 
-`dim_tables.ktr` - трансформация данных внутри базы данных
+`dim_tables.ktr` - трансформация данных 
 
 ![dimension](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dimension.png)
 
