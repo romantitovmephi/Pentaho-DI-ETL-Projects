@@ -1,15 +1,28 @@
-`staging_orders.ktr` - трансформация по загрузке данных из файла Excel в базу данных
+`temp` - содержит все файлы трансформаций
 
-![staging](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/staging.png)
 
-![stg](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/stg.png)
+`job_download_file.kjb` - скачивает файл через HTTP или Shell (указать путь до `import.sh`)
 
-`dim_tables.ktr` - трансформация данных 
+![download](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/dwnld.png)
 
-![dimension](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dimension.png)
+`merge_transformation.ktr` - объединяет данные из трех таблиц в одну, сохраняет в `file-general.csv`
 
-![dw](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/dw.png)
+![merge](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/mrg.png)
 
-`Pentaho_Postgres_Job.kjb` - job, выполняющий всю последовательность трансформаций (оркестрирует data pipeline)
+`transformation_for_task.ktr` - разбивает данные на разные форматы:
+1) инфо по продуктам в JSON формате (папка products)
+2) инфо о возвратах в XML (папка returns)
+3) инфо о заказах по регионам (папка orders):
+  - CENTRAL (XLS)
+  - WEST (CSV)
+  - SOUTH (CSV in ZIP)
+  - EAST (DAT)
 
-![job](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project1/screens/job.png)
+![tft](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/tft.png)
+
+`final_job.kjb` - выполняет всю последовательность трансформаций
+
+![final](https://github.com/romantitovmephi/Pentaho-DI-ETL-Projects/blob/main/pentaho_etl_project2/screens/final.png)
+
+
+P.S. перед запуском final_job и не только проверить: Edit - Set Environment Variables: HOME и WORKFOLDER - пути до них, соответственно пути к папкам temp и pentaho_etl_project2
